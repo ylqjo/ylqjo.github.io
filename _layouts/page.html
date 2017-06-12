@@ -1,39 +1,19 @@
 ---
-layout: null
+layout: default
 ---
-
-<html>
-  <head>
-      
-  {% include head.html %}
-
-  {% if site.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-
-  {% if page.url == "/404.html" %}
-  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
-  {% endif %}
-
-  </head>
-  
-  {% include header.html %}
-
-<header class="post-header">
-	<center><div class="contact-title">{{ page.title }}</div>
-		<div class="contact-subtitle"><p>{{ page.subtitle }}</p></div></center>
-</header>
-
-<div class="wrapper">
-	<div class="post-content">
-		{{ content }}
-	</div>
+<div class="post-area post">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <hr>
+    <article class="page-content">
+        {{ content }}
+    </article>
 </div>
-
-<footer>
-
-{% include foot.html %}
-{% include footer.html %}
-
-</footer>
-</html>
+<div class="post-area post comment">
+    <!-- 多说评论框 start -->
+    
+    <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="gaohaoyang.github.io{{ page.url }}"></div>
+    
+    <!-- 多说评论框 end -->
+</div>
