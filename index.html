@@ -1,17 +1,24 @@
 <!DOCTYPE HTML>
 <html>
+  <head>
+  	<title>My Blog</title>
+  	<style>
+  		
+  	</style>
+  </head>
   <body>
-    <div id="name">
-    	<h1>Jo Ye</h1>
+    <div id="header" class="section">
+    	<p>Jo Ye</p>
     </div>
-    <div id="aboutme">
-    	<h2>About Me<br/>关于我</h2>
-    	<p>Hi! I'm Jo. I started to learn web development in June, 2017. It's fun and I want to be a front-end engineer! There is still a lot to learn. But as a well-known saying goes, interest is the best teacher. I'm a Chinese, and I'll write every blog in both English and Chinese so as to communicate with both fellow Chinese developer and people around the world. </p>
+    <div class="section">
+    	<h1><span>About Me<br/>关于我</span></h1>
+    	<p>Hi! I'm <strong>Jo</strong>. I started to learn web development in June, 2017. It's fun and I want to be a <i>front-end engineer</i>! There is still a lot to learn. But as a well-known saying goes, interest is the best teacher. I'm a Chinese, and I'll write every blog in both English and Chinese so as to communicate with both fellow Chinese developer and people around the world. </p>
     	<p>我从2017年六月开始学习网页开发，很有兴趣，希望能成为一名前端工程师。现在还有很多需要学习之处。但正如人们常说的，兴趣是最好的老师！我将用双语写博客，从而跟中国与世界各地的开发者交流。</p>
     	<p>This page is a practice from <a href="https://www.sololearn.com/" style="text-decoration:none"><b>SoloLearn</b></a></p>
+    	<p class="quote">"Declare variables, not war"</p>
     </div>
-    <div id="schedule">
-    	<h2>My Coding Schedule<br>我的编程日程</h2>
+    <div class="section">
+    	<h1><span>My Coding Schedule<br>我的编程日程</span></h1>
     	<table>
     		<tr>
     			<th>Day</th>
@@ -35,52 +42,64 @@
     		</tr>
     		<tr>
     			<td>afternoon</td>
-    			<td>learn</td>
-    			<td>learn</td>
-    			<td>learn</td>
-    			<td>learn</td>
-    			<td>learn</td>
-    			<td>code</td>
-    			<td>code</td>
+    			<td class="learn">learn</td>
+    			<td class="learn">learn</td>
+    			<td class="learn">learn</td>
+    			<td class="learn">learn</td>
+    			<td class="learn">learn</td>
+    			<td class="code">code</td>
+    			<td class="code">code</td>
     		</tr>
     		<tr>
     			<td>evening</td>
-    			<td>code</td>
-    			<td>code</td>
-    			<td>code</td>
-    			<td>code</td>
-    			<td>code</td>
+    			<td class="code">code</td>
+    			<td class="code">code</td>
+    			<td class="code">code</td>
+    			<td class="code">code</td>
+    			<td class="code">code</td>
     			<td></td>
     			<td></td>
     		</tr>
     	</table>
     </div>
-    <div id="skills">
-    	<h2>My Skills<br/>我的技能</h2>
+    <div class="section">
+    	<h1>My Skills<br/>我的技能</h1>
     	<ul>
-    		<li>HTML</li>
-    		<li>CSS</li>
-    		<li>JavaScript</li>
+    		<li>HTML<br />
+    			<progress min="0" max="100" value="70"></progress>
+    		</li>
+    		<li>CSS<br />
+    			<progress min="0" max="100" value="50"></progress>
+    		</li>
+    		<li>JavaScript<br />
+    			<progress min="0" max="100" value="30"></progress>
+    		</li>
     	</ul>
     </div>
-    <div id="media">
-    	<h2>My Media<br/>我的媒体</h2>
-    	<video width="200px" heigh="200px" controls>
-    		<source src="https://www.youtube.com/watch?v=P-X7iCUiWdc&t=108s" type="video/mp4" />
+    <div class="section">
+    	<h1>My Media<br/>我的媒体</h1>
+    	<video width="200" heigh="200" controls>
+    		<source src="https://www.youtube.com/watch?v=P-X7iCUiWdc&t=108s">
     		Your browser does not support the video tag.
     	</video>
+    	<p>It's just a video I made for a Chinese school.</p>
     </div>
-    <div id="contact">
-    	<h2>Contact Me<br />联系我</h2>
+    <div class="section">
+    	<h1>Contact Me<br />联系我</h1>
     	<form>
-    		<input type="text" name="name" value="Name">
-    		<input type="text" name="email" value="Email">
-    		<input type="submit" value="submit">
+    		<input type="text" name="name" placeholder="Name" required />
+    		<br />
+    		<input type="text" name="email" placeholder="Email" required />
+    		<br />
+    		<textarea name="message" placeholder="message" required /></textarea>
+    		<br />
+    		<input type="submit" value="SEND" class="submit">
     	</form>
     </div>
-    <div id="follow">
-    	<h2>Follow Me<br />关注我</h2>
-    	<a href="#"><img alt="Facebook" src="http://icons.iconarchive.com/icons/graphics-vibe/spring-social/256/facebook-icon.png"></a>
+    <div class="section">
+    	<h1>Follow Me<br />关注我</h1>
+    	<a href="#"><img width="50" height="50" alt="Facebook" src="http://icons.iconarchive.com/icons/graphics-vibe/spring-social/256/facebook-icon.png"></a>
     </div>
+    <div class="copyright">&copy; 2017 My Blog. All rights reserved.</div>
   </body>
 </html>
